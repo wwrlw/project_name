@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.layout')
 @section('content')
 <table class="hello.blade">
     <tr>
