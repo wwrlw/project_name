@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
 
 
 
@@ -15,21 +16,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/layout');
-});
-Route::get('/hello', function () {
-    return view('main/hello');
-});
+
+// Route::get('/', [MainController::class, 'inddex']);
+
+ Route::get('/', function () {
+     return view('layouts/layout');
+ });
+// Route::get('/hello', function () {
+//     return view('main/hello');
+// });
+// Route::get('/about', function () {
+//     return view('main/about');
+// });
+
 Route::get('/about', function () {
-    return view('main/about');
+    return view('main.about');
 });
-Route::get('/contact', function () {
+Route::get('/contact', function(){
     $contact = [
         'name' => 'Политех',
         'adres' => 'Пряники',
         'phone' => '8(495)433-2323',
-        'email' => '@polytech.ru',
+        'email' => '@polytech.ru'
     ];
-    return view('main/contact');
+    return view('main.contact', ['contact' => $contact]);
 });
