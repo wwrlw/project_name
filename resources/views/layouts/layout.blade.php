@@ -58,8 +58,8 @@
           </div>
       </main>
           <footer class="bg-light" text-center text-lg-start>
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3) ;">
-                <strong>Сенин Тимофей 211-323 группа</strong>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1) ;">
+                <p>Сенин Тимофей 211-323 группа</p>
             </div>
           </footer>
 </body>
